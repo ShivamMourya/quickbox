@@ -1,0 +1,107 @@
+.image-viewer-model{
+    position: fixed;
+    top: 0; 
+    bottom: 0;
+    left: 0; 
+    right: 0;
+    transition-duration: 0.s;
+    opacity: 0;
+    display: none;
+}
+
+.image-viewer-model .overlay{
+    position: absolute;
+    top: 0; 
+    bottom: 0;
+    left: 0; 
+    right: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: -1;
+}
+
+.image-viewer-model .image-viewer-image{
+    position: absolute;
+    top: 0; 
+    bottom: 0;
+    left: 0; 
+    right: 0;
+    max-width: 900px;
+    width: 90%;
+    max-height: 500px;
+    margin: auto;
+    pointer-events: none;
+}
+
+.image-viewer-model .image-viewer-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    transition-duration: 0.5s;
+    opacity: 0;
+    /* transform: translateX(80px); */
+}
+
+/* Play pasuse css */
+.image-viewer-model .playpause{
+    position: absolute;
+    top: 20px; 
+    left: 30px;
+    height: 40px;
+    width: 40px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.image-viewer-model .info{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color : rgba(255, 255, 255, 0.6);
+    font-family: 'arial';
+}
+
+.image-viewer-model .controls{
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-viewer-model .controls img{
+    width: 100%;
+}
+
+
+.image-viewer-model .forward{
+    left: auto;
+    right: 35px;
+}
+
+.image-viewer-model .close{
+    left: auto;
+    right: 35px;
+    bottom: auto;
+    top: 20px;
+    height: 30px;
+    width: 30px;
+}
+
+footer{
+    display: block;
+    text-align-last: center;
+    text-transform: capitalize;
+    background-color: #000;
+    color: #fff;
+
+}
+footer a{
+    text-decoration: none;
+    color: rgb(35, 168, 90);
+}
+

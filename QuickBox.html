@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/quickbox.css">
+    <title>QuickBox</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            padding: 50px;
+            /* background: linear-gradient(#005a8f47, pink); */
+            background-color: black;
+            width: 100%;
+            height: 100vh;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 10px;
+        }
+
+        .image {
+            width: 100%;
+            margin: auto;
+        }
+
+        .image img {
+            display: block;
+            width: 100%;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: auto;
+            transition: 0.2s;
+        }
+
+        .image img:hover {
+            width: 90%;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="image">
+            <img quickbox src="https://cdn.pixabay.com/photo/2016/03/26/13/09/workspace-1280538_960_720.jpg" alt="">
+        </div>
+        <div class="image">
+            <img quickbox src="https://cdn.pixabay.com/photo/2018/01/31/07/36/secret-3120483_960_720.jpg" alt="">
+        </div>
+        <div class="image">
+            <img quickbox src="https://cdn.pixabay.com/photo/2019/02/21/20/03/leaves-4012127_960_720.jpg" alt="">
+        </div>
+        <div class="image">
+            <img quickbox src="https://cdn.pixabay.com/photo/2015/02/28/15/25/snake-653639_960_720.jpg" alt="">
+        </div>
+        <div class="image">
+            <img quickbox src="https://cdn.pixabay.com/photo/2014/07/16/05/18/beach-394503_960_720.jpg" alt="">
+        </div>
+        <div class="image">
+            <img quickbox src="https://cdn.pixabay.com/photo/2014/02/27/17/51/grapes-276070_960_720.jpg"
+                onerror=this.src="https://picsum.photos/id/317/2084/1250">
+        </div>
+        <div class="image">
+            <img quickbox src="https://cdn.pixabay.com/photo/2019/02/06/17/09/snake-3979601_960_720.jpg" alt="">
+        </div>
+        <div class="image">
+            <img quickbox src="https://cdn.pixabay.com/photo/2016/11/29/05/08/apple-1867461_960_720.jpg" alt="">
+        </div>
+    </div>
+
+    <div>
+        <footer>design & developed by - <a
+                href=https://www.instagram.com/invites/contact/?i=12wcfjmb8q1n9&utm_content=1tqpnvf>Shivam Mourya</a>
+        </footer>
+    </div>
+
+
+    <script src="js/quickbox.js"></script>
+
+    <script>
+
+        //quickbox cutomzation
+
+        quickbox.option({
+            backgroundOpacity: 1,
+            imageTransitionTiming: 1,
+            disableNavigation: false,
+            disableInfo: true,
+            slideShowTiming: 1.5,
+        });
+
+
+    </script>
+
+</body>
+
+</html>
